@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background: #202227;
+}
+.leftnav,
+.rightnav,
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  position: relative;
+  left: 5%;
+  bottom: 15px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.link {
+  padding: 20px;
+}
+.link img {
+  height: 55px;
+  width: 55px;
+}
+.link i {
+  font-size: 30px;
+  color: #fff;
+}
+input {
+  padding: 7px 10px;
+  font-size: 18px;
+  outline: none;
+}
+.search i {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 5px;
+  margin-left: 3px;
+  background: #fff;
+  color: #000;
+}
+.profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 15px;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 15px;
+  outline: none;
+}
+.dropdown i {
+  font-size: 30px;
+}
+.options {
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+.premium-link {
+  width: 130px;
+  text-align: center;
+  text-decoration: none;
+  color: #ee1a06;
+  padding: 15px;
+}
+.feed-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  margin-left: 4vw;
+}
+.content1,
+.content3 {
+  width: 25%;
+  height: 90vh;
+  box-shadow: 3px 3px 3px rgba(134, 134, 134, 0.5),
+    -3px -3px 3px rgba(134, 134, 134, 0.3);
+  padding: 10px;
+  margin: 10px;
+}
+.content2 {
+  width: 50%;
+  height: 90vh;
+  box-shadow: 3px 3px 3px rgba(134, 134, 134, 0.5),
+    -3px -3px 3px rgba(134, 134, 134, 0.3);
+  padding: 10px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.head-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.head img {
+  height: 80px;
+  width: 80px;
+}
+.follow-link {
+  text-decoration: none;
+  color: #1404ff;
+}
+.caption {
+  width: 100%;
+  padding: 5px 10px;
+}
+.thumbnail {
+  width: 100%;
+  height: 350px;
+}
+.reaction {
+  padding: 15px;
+  border: 1px solid #bebebe;
+}
+.reaction i {
+  padding: 5px;
+  cursor: pointer;
+}
+.smallnav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links,
+  .content1,
+  .content3 {
+    display: none;
+  }
+  .smallnav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    bottom: 5px;
+  }
+  .link {
+    list-style: none;
+    margin-left: 30px;
+  }
+  .content2 {
+    width: 100%;
+  }
+}
